@@ -9,7 +9,7 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "clang-ocl";
-  version = "5.4.2";
+  version = "5.6.0";
 
   src = fetchFromGitHub {
     owner = "RadeonOpenCompute";

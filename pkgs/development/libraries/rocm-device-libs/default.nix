@@ -14,13 +14,13 @@ let
     else throw "Unsupported ROCm LLVM platform";
 in stdenv.mkDerivation (finalAttrs: {
   pname = "rocm-device-libs";
-  version = "5.4.4";
+  version = "5.6.0";
 
   src = fetchFromGitHub {
     owner = "RadeonOpenCompute";
     repo = "ROCm-Device-Libs";
     rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-8gxvgy2GlROxM5qKtZVu5Lxa1FmTIVlBTpfp8rxhNhk=";
+    hash = "sha256-cLGJn/AZ2oX/AZXiagK3aoxbOj4rTI10dEmn5Jk36ck=";
   };
 
   patches = [ ./cmake.patch ];

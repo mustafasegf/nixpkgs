@@ -12,13 +12,13 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "rocr-debug-agent";
-  version = "5.4.2";
+  version = "5.6.0";
 
   src = fetchFromGitHub {
     owner = "ROCm-Developer-Tools";
     repo = "rocr_debug_agent";
     rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-5l6svWSWCxVoyr1zJabxbt5rXQMtdZtHrf9gS2PcRKc=";
+    hash = "sha256-xKtCJkrCZ35mZoNt8dQ38GKLkkhn39yxwPfn4xqlkkw=";
   };
 
   nativeBuildInputs = [

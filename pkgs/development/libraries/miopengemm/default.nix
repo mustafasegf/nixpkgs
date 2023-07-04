@@ -31,7 +31,7 @@ let
   };
 in stdenv.mkDerivation (finalAttrs: {
   pname = "miopengemm";
-  version = "5.4.3";
+  version = "5.5.0";
 
   outputs = [
     "out"
@@ -118,6 +118,7 @@ in stdenv.mkDerivation (finalAttrs: {
     license = with licenses; [ mit ];
     maintainers = teams.rocm.members;
     platforms = platforms.linux;
-    broken = versions.minor finalAttrs.version != versions.minor stdenv.cc.version;
+    # Not updated to 5.6.X yet...
+    broken = versions.major finalAttrs.version != versions.major stdenv.cc.version;
   };
 })

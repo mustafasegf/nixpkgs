@@ -83,13 +83,13 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "rocfft";
-  version = "5.4.3";
+  version = "5.6.0";
 
   src = fetchFromGitHub {
     owner = "ROCmSoftwarePlatform";
     repo = "rocFFT";
     rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-FsefE0B2hF5ZcHDB6TscwFeZ1NKFkWX7VDpEvvbDbOk=";
+    hash = "sha256-wNtSZH00WubyhOgbFtzUo54F4Oh1NndYcVSsspClq0c=";
   };
 
   patches = [

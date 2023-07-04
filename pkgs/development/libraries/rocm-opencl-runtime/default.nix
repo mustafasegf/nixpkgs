@@ -14,13 +14,13 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "rocm-opencl-runtime";
-  version = "5.4.4";
+  version = "5.6.0";
 
   src = fetchFromGitHub {
     owner = "RadeonOpenCompute";
     repo = "ROCm-OpenCL-Runtime";
     rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-E1+Y/fgp5b+7H1LN+O1fwVi0/XRCgvsiSxTY3u/q+8I=";
+    hash = "sha256-I/ugJyxgEfZlEo2B3/6LqlJOX/kLDPucX7YOpoDr7qs=";
   };
 
   nativeBuildInputs = [ cmake ];

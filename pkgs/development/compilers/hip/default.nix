@@ -49,7 +49,7 @@ let
   ];
 in stdenv.mkDerivation (finalAttrs: {
   pname = "hip-${hipPlatform}";
-  version = "5.4.4";
+  version = "5.6.0";
 
   outputs = [
     "out"
@@ -61,7 +61,7 @@ in stdenv.mkDerivation (finalAttrs: {
     owner = "ROCm-Developer-Tools";
     repo = "hipamd";
     rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-FcuylhkG7HqLYXH1J6ND6IVEIbDzHp7h7jg2ZZ4XoFM=";
+    hash = "sha256-MzorBJeLSHWpx4eKFMEkhDcIn0VE+ltJLIdMzIYBaXE=";
   };
 
   patches = [
